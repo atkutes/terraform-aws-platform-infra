@@ -4,10 +4,6 @@ Production-like AWS infrastructure built using Terraform.
 
 ---
 
-## 🧱 Architecture
-
-## 🧱 Architecture
-
 ![Architecture](architecture.png)
 
 ---
