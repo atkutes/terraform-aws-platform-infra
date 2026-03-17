@@ -25,7 +25,7 @@ EC2 Instance (Apache Web Server)
 - Linux (Amazon Linux 2)
 - Apache (httpd)
 
----
+
 
 ## 📁 Project Structure
 
@@ -42,7 +42,6 @@ terraform-aws-platform-infra/
 ├── README.md
 └── .gitignore
 
----
 
 ## 🚀 Features
 
