@@ -62,17 +62,17 @@ terraform-aws-platform-infra/
 cd environments/dev
 terraform init
 terraform apply
----
----
+```
+```
 ## 🌍 Result
 
 Open in browser:
 
 http://<alb_dns>
----
+```
 
 ## 🧠 What I Learned
-
+```
 AWS networking (VPC, subnets, routing)
 
 Load balancing (ALB)
@@ -80,9 +80,9 @@ Load balancing (ALB)
 Terraform modules
 
 Debugging real cloud issues
----
+```
 
----
+```
 
 ## 🔧 Troubleshooting
 
@@ -94,7 +94,7 @@ Fixed security group misconfigurations
 
 Fixed EC2 user_data issues
 
----
+```
 
 ## 📌 Future Improvements
 
