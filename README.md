@@ -58,15 +58,18 @@ terraform-aws-platform-infra/
 
 ## ▶️ How to Deploy
 
-```bash
+```
 cd environments/dev
 terraform init
 terraform apply
+---
+
 🌍 Result
 
 Open in browser:
 
 http://<alb_dns>
+---
 
 🧠 What I Learned
 
@@ -77,6 +80,9 @@ Load balancing (ALB)
 Terraform modules
 
 Debugging real cloud issues
+---
+
+---
 
 🔧 Troubleshooting
 
@@ -87,6 +93,8 @@ Fixed subnet routing issues
 Fixed security group misconfigurations
 
 Fixed EC2 user_data issues
+
+---
 
 📌 Future Improvements
 
