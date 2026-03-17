@@ -3,9 +3,9 @@
 Production-like AWS infrastructure built using Terraform.
 
 ---
-
+## 🧱 Architecture Diagram
 ![Architecture](architecture.png)
-
+Traffic flows from the Internet through the Application Load Balancer to the EC2 instance running an Apache web server.
 ---
 
 
