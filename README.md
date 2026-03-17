@@ -29,20 +29,18 @@ EC2 Instance (Apache Web Server)
 
 ## 📁 Project Structure
 
-...
 terraform-aws-platform-infra/
 │
 ├── modules/
-│ ├── vpc/
-│ ├── alb/
-│ └── ec2/
+│   ├── vpc/
+│   ├── alb/
+│   └── ec2/
 │
 ├── environments/
-│ └── dev/
+│   └── dev/
 │
 ├── README.md
 └── .gitignore
-...
 
 ---
 
