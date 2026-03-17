@@ -6,13 +6,15 @@ This project simulates a real-world platform setup with networking, load balanci
 ---
 
 ## 🧱 Architecture
-Internet
-↓
-Application Load Balancer (ALB)
-↓
-EC2 Instance (Apache Web Server)
 
----
+```text
+Internet
+  |
+  v
+Application Load Balancer (ALB)
+  |
+  v
+EC2 Instance (Apache Web Server)
 
 ## ⚙️ Tech Stack
 
@@ -21,18 +23,19 @@ EC2 Instance (Apache Web Server)
 - Linux (Amazon Linux 2)
 - Apache (httpd)
 
----
 
 ## 📁 Project Structure
-terraform-aws-platform-infra
+
+```text
+terraform-aws-platform-infra/
 │
 ├── modules/
-│ ├── vpc/ # Networking (VPC, subnets, routing)
-│ ├── alb/ # Application Load Balancer
-│ └── ec2/ # EC2 instance + web server
+│   ├── vpc/
+│   ├── alb/
+│   └── ec2/
 │
 ├── environments/
-│ └── dev/ # Environment configuration
+│   └── dev/
 │
 ├── README.md
 └── .gitignore
