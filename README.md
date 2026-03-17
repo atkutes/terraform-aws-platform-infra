@@ -1,35 +1,55 @@
-# Terraform AWS Platform Infrastructure
+# 🚀 Terraform AWS Platform Infrastructure
 
-Production-like AWS infrastructure built with Terraform.
+Production-like AWS infrastructure built using Terraform.  
+This project simulates a real-world platform setup with networking, load balancing and compute resources.
+
+---
 
 ## 🧱 Architecture
+Internet
+↓
+Application Load Balancer (ALB)
+↓
+EC2 Instance (Apache Web Server)
 
-Internet → Application Load Balancer → EC2 (Apache Web Server)
+---
 
 ## ⚙️ Tech Stack
 
-- AWS (VPC, EC2, ALB, Security Groups)
-- Terraform
+- AWS (VPC, EC2, ALB, Security Groups, Internet Gateway)
+- Terraform (Infrastructure as Code)
 - Linux (Amazon Linux 2)
 - Apache (httpd)
+
+---
+
+## 📁 Project Structure
+terraform-aws-platform-infra
+│
+├── modules/
+│ ├── vpc/ # Networking (VPC, subnets, routing)
+│ ├── alb/ # Application Load Balancer
+│ └── ec2/ # EC2 instance + web server
+│
+├── environments/
+│ └── dev/ # Environment configuration
+│
+├── README.md
+└── .gitignore
+
+
+---
 
 ## 🚀 Features
 
 - Custom VPC with public subnets
-- Application Load Balancer
-- EC2 instance running web server
-- Health checks via ALB
-- Modular Terraform structure
+- Internet Gateway and routing configuration
+- Application Load Balancer (ALB)
+- EC2 instance running Apache web server
+- Health checks via ALB target group
+- Modular Terraform architecture
 
-## 📁 Project Structure
-modules/
-vpc/
-alb/
-ec2/
-
-environments/
-dev/
-
+---
 
 ## ▶️ How to Deploy
 
@@ -45,44 +65,50 @@ After deployment, open:
 
 http://<alb_dns>
 
-You should see:
+Expected output:
 
 HELLO FROM TERRAFORM WORKS
 
-## ## 🧠 What I Learned
+🧠 Key Learnings
 
-AWS networking (VPC, subnets, routing)
+AWS networking fundamentals (VPC, subnets, route tables)
 
-Load balancing with ALB
+Load balancing using ALB
 
-Terraform modules and structure
+Infrastructure as Code with Terraform modules
 
-Debugging real infrastructure issues
+Security group configuration and traffic flow
 
-Security groups and connectivity
+Debugging real cloud infrastructure issues
 
-###### 📌 Future Improvements
+🔧 Troubleshooting & Challenges
 
-Auto Scaling Group
+During development, I solved several real-world cloud issues:
 
-HTTPS (ACM + ALB)
+Fixed ALB target group "unhealthy" status
 
-CI/CD (GitHub Actions)
+Resolved subnet routing and Internet Gateway configuration
 
-Monitoring (CloudWatch)
+Debugged EC2 user_data execution issues
 
+Fixed security group misconfigurations
 
----
+Ensured proper HTTP service availability on EC2
 
-# 📄 2️⃣ .gitignore
+📌 Future Improvements
 
-📄 `.gitignore`
+Auto Scaling Group (ASG)
 
-```bash
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-*.tfvars
-.terraform.lock.hcl
-.env
+HTTPS with ACM + ALB
+
+Remote Terraform state (S3 backend)
+
+CI/CD pipeline (GitHub Actions)
+
+Monitoring with CloudWatch
+
+💼 About
+
+This project was built as part of my journey into Cloud / Platform Engineering.
+
+I am currently open to Junior Cloud / Platform Engineering roles in Oslo 🇳🇴
