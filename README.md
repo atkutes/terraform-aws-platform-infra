@@ -64,31 +64,20 @@ terraform init
 terraform apply
 
 
-``` ##🌍 Result
+## 🌍 Result
 
-Open:
+Open in browser:
 
 http://<alb_dns>
-🧠 What I Learned
 
-AWS networking
+---
 
-Load balancing
+## 🧠 What I Learned
 
-Terraform modules
-
-Debugging real issues
-
-🔧 Troubleshooting
-
-Fixed ALB unhealthy
-
-Fixed routing issues
-
-Fixed security groups
-
-Fixed user_data
-
+- AWS networking (VPC, subnets, routing)
+- Load balancing (ALB)
+- Terraform modules
+- Debugging real cloud issues
 📌 Future Improvements
 
 Auto Scaling
