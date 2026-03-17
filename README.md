@@ -6,13 +6,13 @@ Production-like AWS infrastructure built using Terraform.
 
 ## 🧱 Architecture
 
-```text
+
 Internet
-  |
-  v
+|
+v
 Application Load Balancer (ALB)
-  |
-  v
+|
+v
 EC2 Instance (Apache Web Server)
 
 
@@ -29,20 +29,21 @@ EC2 Instance (Apache Web Server)
 
 ## 📁 Project Structure
 
+
 terraform-aws-platform-infra/
 │
 ├── modules/
-│   ├── vpc/
-│   ├── alb/
-│   └── ec2/
+│ ├── vpc/
+│ ├── alb/
+│ └── ec2/
 │
 ├── environments/
-│   └── dev/
+│ └── dev/
 │
 ├── README.md
 └── .gitignore
 
--
+
 ---
 
 ## 🚀 Features
@@ -57,31 +58,40 @@ terraform-aws-platform-infra/
 
 ## ▶️ How to Deploy
 
-```markdown
 ```bash
 cd environments/dev
 terraform init
 terraform apply
-
-
-## 🌍 Result
+🌍 Result
 
 Open in browser:
 
 http://<alb_dns>
 
----
+🧠 What I Learned
 
-## 🧠 What I Learned
+AWS networking (VPC, subnets, routing)
 
-- AWS networking (VPC, subnets, routing)
-- Load balancing (ALB)
-- Terraform modules
-- Debugging real cloud issues
+Load balancing (ALB)
+
+Terraform modules
+
+Debugging real cloud issues
+
+🔧 Troubleshooting
+
+Fixed ALB target group unhealthy
+
+Fixed subnet routing issues
+
+Fixed security group misconfigurations
+
+Fixed EC2 user_data issues
+
 📌 Future Improvements
 
-Auto Scaling
+Auto Scaling Group
 
-CI/CD
+CI/CD (GitHub Actions)
 
-Monitoring
+Monitoring (CloudWatch)
