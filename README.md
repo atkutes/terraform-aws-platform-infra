@@ -57,13 +57,14 @@ terraform-aws-platform-infra/
 
 ## ▶️ How to Deploy
 
+```markdown
 ```bash
 cd environments/dev
 terraform init
 terraform apply
 
 
-🌍 Result
+``` ##🌍 Result
 
 Open:
 
