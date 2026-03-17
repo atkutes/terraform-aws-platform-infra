@@ -97,9 +97,10 @@ Fixed EC2 user_data issues
 ```
 
 ## 📌 Future Improvements
-
+```
 Auto Scaling Group
 
 CI/CD (GitHub Actions)
 
 Monitoring (CloudWatch)
+```
