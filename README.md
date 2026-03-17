@@ -63,15 +63,15 @@ cd environments/dev
 terraform init
 terraform apply
 ---
-
-🌍 Result
+---
+## 🌍 Result
 
 Open in browser:
 
 http://<alb_dns>
 ---
 
-🧠 What I Learned
+## 🧠 What I Learned
 
 AWS networking (VPC, subnets, routing)
 
@@ -84,7 +84,7 @@ Debugging real cloud issues
 
 ---
 
-🔧 Troubleshooting
+## 🔧 Troubleshooting
 
 Fixed ALB target group unhealthy
 
@@ -96,7 +96,7 @@ Fixed EC2 user_data issues
 
 ---
 
-📌 Future Improvements
+## 📌 Future Improvements
 
 Auto Scaling Group
 
