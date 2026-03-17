@@ -26,22 +26,23 @@ EC2 Instance (Apache Web Server)
 - Apache (httpd)
 
 
-
+---
 ## 📁 Project Structure
 
+```
 terraform-aws-platform-infra/
-│
-├── modules/
-│   ├── vpc/
-│   ├── alb/
-│   └── ec2/
-│
-├── environments/
-│   └── dev/
-│
-├── README.md
-└── .gitignore
 
+modules/
+  vpc/
+  alb/
+  ec2/
+
+environments/
+  dev/
+
+README.md
+.gitignore
+```
 
 ## 🚀 Features
 
