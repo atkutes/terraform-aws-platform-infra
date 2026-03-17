@@ -29,7 +29,7 @@ EC2 Instance (Apache Web Server)
 
 ## 📁 Project Structure
 
-
+...
 terraform-aws-platform-infra/
 │
 ├── modules/
@@ -42,7 +42,7 @@ terraform-aws-platform-infra/
 │
 ├── README.md
 └── .gitignore
-
+...
 
 ---
 
