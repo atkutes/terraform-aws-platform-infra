@@ -15,15 +15,19 @@ Application Load Balancer (ALB)
   v
 EC2 Instance (Apache Web Server)
 
-⚙️ Tech Stack
 
-AWS (VPC, EC2, ALB, Security Groups)
+---
 
-Terraform
+## ⚙️ Tech Stack
 
-Linux (Amazon Linux 2)
+- AWS (VPC, EC2, ALB, Security Groups)
+- Terraform
+- Linux (Amazon Linux 2)
+- Apache (httpd)
 
-Apache (httpd)
+---
+
+## 📁 Project Structure
 
 terraform-aws-platform-infra/
 │
@@ -38,22 +42,26 @@ terraform-aws-platform-infra/
 ├── README.md
 └── .gitignore
 
-🚀 Features
+-
+---
 
-Custom VPC
+## 🚀 Features
 
-ALB
+- Custom VPC
+- Application Load Balancer (ALB)
+- EC2 with Apache web server
+- Health checks
+- Terraform modules
 
-EC2 with Apache
+---
 
-Health checks
+## ▶️ How to Deploy
 
-Terraform modules
-
-▶️ How to Deploy
+```bash
 cd environments/dev
 terraform init
 terraform apply
+
 
 🌍 Result
 
