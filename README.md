@@ -6,16 +6,21 @@ Production-like AWS infrastructure built using Terraform.
 
 ## 🧱 Architecture
 
+## 🧱 Architecture
 
-Internet
-|
-v
-Application Load Balancer (ALB)
-|
-v
-EC2 Instance (Apache Web Server)
+![Architecture](architecture.png)
+
+---
 
 
+## 🌐 Networking
+
+- VPC with custom CIDR block
+- Public subnet for ALB and EC2
+- Internet Gateway attached to VPC
+- Route table configured for internet access (0.0.0.0/0 → IGW)
+- Security groups allowing HTTP (80) and SSH (22)
+- ALB routing traffic to EC2 instance
 ---
 
 ## ⚙️ Tech Stack
