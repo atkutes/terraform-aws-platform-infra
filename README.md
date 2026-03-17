@@ -17,6 +17,7 @@ Traffic flows from the Internet through the Application Load Balancer to the EC2
 - Route table configured for internet access (0.0.0.0/0 → IGW)
 - Security groups allowing HTTP (80) and SSH (22)
 - ALB routing traffic to EC2 instance
+- Traffic flows from ALB to EC2 via target group
 ---
 
 ## ⚙️ Tech Stack
